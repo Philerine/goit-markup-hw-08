@@ -1,0 +1,24 @@
+.footer {
+    background: var(--hero-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__container {
+        display: flex;
+        align-items: baseline;
+    }
+
+    &__wrapper {
+        margin-right: 70px;
+    }
+
+    &__logo {
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+
+    &__logo--part {
+        color: var(--main-white);
+    }
+
+}
