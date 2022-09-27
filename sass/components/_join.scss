@@ -1,5 +1,7 @@
 .join {
-    margin-right: 93px;
+    @media screen and (min-width:1200px) {
+    margin-right: 93px;   
+    }
 
 
     &__title {
@@ -9,6 +11,9 @@
         line-height: 1.14;
         margin: 0;
         padding: 0;
+        @media screen and (min-width:1200px) {
+            padding-top: 12px            
+        }
     }
 
     &__list {
