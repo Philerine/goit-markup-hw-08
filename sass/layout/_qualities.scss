@@ -43,20 +43,30 @@
   }
 
   &__item {
-    &__item:not(:last-child) {
-      margin-bottom: 30px;
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+    @media screen and (min-width: 768px), (max-width: 1199px) {
+      &:nth-child(-n + 2) {
+        margin-bottom: 30px;
+      }
     }
 
-    @media screen and (min-width:768px) {
-    &:nth-child(2n+1) {
-    margin-right: 30px;      
-    }
+    @media screen and (min-width: 768px) {
+      &:nth-child(2n + 1) {
+        margin-right: 30px;
+      }
     }
 
-    @media screen and (min-width:1200px) {
-        &:not(:last-child) {
-            margin-right: 30px;
-        }
+    @media screen and (min-width: 1200px) {
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+      &:nth-child(-n + 2) {
+        margin-bottom: 0;
+      }
     }
   }
 
